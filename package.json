@@ -1,0 +1,24 @@
+{
+  "name": "react-static-gen",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Evan Fleet <evfleet@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/html-webpack-plugin": "^3.2.0",
+    "@types/node": "^11.11.3",
+    "@types/webpack": "^4.4.26",
+    "awesome-typescript-loader": "^5.2.1",
+    "html-webpack-plugin": "^3.2.0",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6"
+  },
+  "bin": {
+    "react-static-gen": "bin/react-static-gen"
+  }
+}
