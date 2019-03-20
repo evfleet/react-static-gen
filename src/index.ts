@@ -4,7 +4,6 @@ import util from 'util';
 import webpack from 'webpack';
 import HTMLPlugin from 'html-webpack-plugin';
 
-const config = require('../webpack.config');
 const readFiles = util.promisify(fs.readdir);
 
 export default async () => {
@@ -13,7 +12,6 @@ export default async () => {
   console.log('templates', templates)
   
   const compiler = webpack({ 
-    ...config,
     entry: './scripts/index.js',
     output: {
       path: path.join(process.cwd(), 'public')
